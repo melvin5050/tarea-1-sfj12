@@ -1,0 +1,290 @@
+:root{
+    --maincolor:#163235;
+    --secondclr:#4468e3;
+    --thirdcolor:#1C4961;
+    
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+ 
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 7%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10000;
+    background-color: #fff;
+   
+}
+
+
+.header #logo{
+    color: black;
+    font-size: 3rem;
+}
+.header #logo span{
+color: var(--secondclr);
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    padding: 0.9rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+color: var(--secondclr);
+}
+
+.icons #menu bars{
+    font-size: 2rem;
+    color: black;
+    display: none;
+    display: block;
+    color: #fff;
+}
+
+icons #menu bars:hover{
+    color: #4468e3;
+}
+
+div.icons a{
+
+    display: none;
+}
+
+section{
+    background-image: url(../img/fondo\ flores.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.imagen{
+    justify-content: center;
+    display: flex;
+    padding-top: 10rem;
+
+}
+
+.imagen h1{
+    
+    color: #4e5964;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 6rem;
+}
+
+.imagen p{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: block;
+    padding-top: 30rem;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+/**--section--**/
+
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    background-color: aqua;
+}
+
+
+section h1{
+    font-size: 50px;
+    color: rgb(90, 90, 136);
+    padding-top: 60px;
+    height: 100%;
+}
+
+section h2{
+    color: rgb(0, 0, 0);
+    padding-top: 25px;
+    height: 100%;
+    font-size: 2rem;
+}
+section p{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: inherit;
+}
+ section {
+    padding: 1.5rem 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+  padding-top: 3rem;
+ }
+ h2{text-align: center;
+    font-size: 3rem;
+    margin-top: 4rem;
+
+}
+
+ h5{
+    text-align: center;
+    display: block;
+    color: #010613;
+    text-transform: uppercase;
+    margin-top: 13px;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+ }
+
+ .explora h1{
+text-align: center;
+color: var(--secondclr);
+text-transform: uppercase;
+font-size: 3rem;
+margin-top: 5rem;
+
+ }
+
+ .explora p{
+    text-align: center;
+    margin-top: 13px;
+    font-size: 2rem;
+    color: rgb(36, 36, 1);
+    padding-top: 50px;
+ }
+
+
+
+
+
+
+/**--tipo carusell--**/
+
+.container{
+    padding: 16px;
+}
+
+.img-contairner img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    padding: 10px;
+   
+}
+
+.list-img img{
+    width: 100%;
+    object-fit: cover;
+    width: 450px;
+    height: 400px;
+    margin-right: 10px;
+    display: block;
+}
+
+.list-img{
+    display: flex;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+ 
+ 
+ /**--maps--**/
+
+ .mapa{
+   
+    background-color: #fff;
+    text-align: left;
+    padding-top: 6rem;
+    height: 300px;
+    width: 1500px;
+    padding: 10px;
+}
+    
+@media (max-width:768px){
+
+    html{
+        font-size:55%;
+    }
+    .incos #menu-bars{
+        display: initial;
+    }
+    
+    .header{
+        padding: 2rem;
+    }
+    
+    .navbar{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: top;
+        z-index: 2;
+        
+       
+    }
+    
+    
+    
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 30px;
+    }
+    
+    #check:checked ~fas-fa-bars{
+        left: 0;
+        transition: all .5s;
+    }
+    
+    .imagen h1{
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    div.icons a{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor:pointer;
+    }
+
+
+}
+
